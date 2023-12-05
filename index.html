@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="today-weather">
+            <table>
+                <tr class="today-weather-header">
+                    <td class="today-weather-city">Warsaw</td>
+                    <td><img class="today-weather-image" src="#" alt="image-weather"></td>
+                </tr>
+                <tr>
+                    <td>Temperature</td>
+                    <td class="today-weather-temperature">23°</td>
+                </tr>
+                <tr>
+                    <td>Windspeed</td>
+                    <td class="today-weather-windspeed">23 km/h</td>
+                </tr>
+                <tr>
+                    <td>Humidity</td>
+                    <td class="today-weather-humidity">34%</td>
+                </tr>
+                <tr>
+                    <td>Sunset</td>
+                    <td class="today-weather-sunrise">5:31</td>
+                </tr>
+                <tr>
+                    <td>Sunrise</td>
+                    <td class="today-weather-sunset">10:32</td>
+                </tr>
+            </table>
+        </div>
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+        <div class="search-container">
+            <div class="search">
+                <input type="text" class="city-input">
+                <button class="search-city-button">👓</button>
+                <button class="add-city-button">➕</button>
+            </div>
+            <div class="city-list">
+                
+            </div>
+        </div>
+        <div class="forecast-container">
+            <table class="forecast-table">
+                <tr>
+                    <td class="forecast-date">20.05</td>
+                    <td class="forecast-date">20.05</td>
+                    <td class="forecast-date">20.05</td>
+                    <td class="forecast-date">20.05</td>
+                    <td class="forecast-date">20.05</td>
+                </tr>
+                <tr>
+                    <td class="forecast-image-container"><img class="forecast-image" src="#" alt="image-weather"></td>
+                    <td class="forecast-image-container"><img class="forecast-image" src="#" alt="image-weather"></td>
+                    <td class="forecast-image-container"><img class="forecast-image" src="#" alt="image-weather"></td>
+                    <td class="forecast-image-container"><img class="forecast-image" src="#" alt="image-weather"></td>
+                    <td class="forecast-image-container"><img class="forecast-image" src="#" alt="image-weather"></td>
+                </tr>
+                <tr>
+                    <td class="forecast-temperature">23°</td>
+                    <td class="forecast-temperature">23°</td>
+                    <td class="forecast-temperature">23°</td>
+                    <td class="forecast-temperature">23°</td>
+                    <td class="forecast-temperature">23°</td>
+                </tr>
+            </table>
+        </div>
+        <div class="chart-container">
+            <div class="chart-canvas-container">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

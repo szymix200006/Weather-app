@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand$display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Quicksand';
+    z-index: 1;
+}
+
+*:focus {
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.today-weather {
+     width: 35%;
+     height: 60%;
+     display: flex;
+     text-align: center;
+     font-size: 1.5vw;
+}
+
+.today-weather table {
+    background-color: #e6e2d3;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.today-weather-header{
+    font-size: 2vw;
+    background-color: #405d27;
+    color:#f0f0f0;
+}
+
+table, td, tr {
+    border-spacing: 0;
+}
+
+.map-container {
+    width: 40%;
+    height: 60%;
+    display: flex;
+}
+
+#map {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.forecast-container {
+    height: 40%;
+    width: 60%;
+    display: flex;
+}
+
+.forecast-table {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.forecast-date {
+    background-color: #3C6255;
+    color: #f0f0f0;
+}
+
+.forecast-image-container {
+    background-color: #A6BB8D;
+    height: 45%;
+}
+
+.forecast-temperature {
+    background-color: #EAE7B1;
+}
+
+.chart-container {
+    width: 40%;
+    height: 40%;
+    display: flex;
+}
+
+.chart-canvas-container {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+#myChart {
+    width: 100%;
+    height: 100%;
+}
+
+.search-container {
+    width: 25%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.city-list {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.city {
+    margin-top: 5%;
+    height: 10%;
+    width: 90%;
+    background-color: #3C6255;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    column-gap: 10%;
+    color: #f0f0f0;
+}
+
+.delete-city-button {
+    background: none;
+    border: none;
+}
+
+.search {
+    margin-top: 10%;
+    width: 90%;
+    height: 5%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    border-radius: 90px;
+    border: 1px solid black;
+    gap: 2%;
+    padding: 3px;
+}
+
+.city-input {
+    border: none;
+    padding: 2px;
+    width: 90%;
+}
+
+.search-city-button {
+    border-radius: 90px;
+}
+
+.add-city-button {
+    border-radius: 90px;
+}
+
+.error-container {
+    width: 30%;
+    height: 15%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    flex-direction: column;
+    gap: 5%;
+    background-color:#EAE7B1;
+    z-index: 10;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
